@@ -74,7 +74,8 @@ if __name__ == "__main__":
             webbrowser.open(url)
         
         elif "goodbye" in command:
-             exit()
+            speak("have a nice day")
+            exit()
         
         elif "what" and "is" in command:
             print("searching in goolge...")
@@ -96,3 +97,6 @@ if __name__ == "__main__":
             speak(example)
         elif "open browser" in command:
             webbrowser.open("https://google.com")
+        elif "who made you" in command:
+            speak("i am made by Syed Yashin Hussain and his fellow classmates as a project")
+            speak("hopes that helps")
