@@ -7,6 +7,7 @@ import webbrowser
  
 
 engine= pyttsx3.init()
+
 voices = engine.getProperty('voices')
 engine.setProperty('voices', voices[1].id)
 
@@ -44,7 +45,7 @@ def takecommand():
     return query
 
 if __name__ == "__main__":
-    #wishme()
+    
     
     while True:
         command = takecommand().lower()
@@ -54,6 +55,7 @@ if __name__ == "__main__":
            results = wikipedia.summary(command, sentences=2)
            speak("According to wikipedia")
            speak(results)
+           print(results)
         
         elif "time" in command:
             hour = int(datetime.datetime.now().hour)
@@ -65,8 +67,8 @@ if __name__ == "__main__":
             speak(sec)
             
         elif "music" in command:
-            webbrowser.open("https://www.youtube.com/results?search_query=music")
-        
+            webbrowser.open("https://www.youtube.com/watch?v=OPf0YbXqDm0&list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj")
+            speak("hope you like POP")
         elif "youtube" in command:
             print("searching youtube...")
             command= command.replace('youtube', '')
@@ -81,7 +83,10 @@ if __name__ == "__main__":
             print("searching in goolge...")
             command= command.replace('what' and 'is', '')
             results= wikipedia.summary(command, sentences = 3)
+            print(results)            
             speak(results)
+
+
         elif "hello" in command:
             wishme()
         elif "yourself" in command:
@@ -98,5 +103,5 @@ if __name__ == "__main__":
         elif "open browser" in command:
             webbrowser.open("https://google.com")
         elif "who made you" in command:
-            speak("i am made by Syed Yashin Hussain and his fellow classmates as a project")
+            speak("i am made by The One and Only one wink wink")
             speak("hopes that helps")
