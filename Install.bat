@@ -4,3 +4,4 @@ pip install datetime
 pip install wikipedia
 pip install webbrowser
 pip install pyaudio
+pip install python-dotenv
