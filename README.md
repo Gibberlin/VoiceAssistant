@@ -1,7 +1,9 @@
 
 # Voice Assistant
 
-This is Simple Voice Assistant tool made with Python. That is free to use and Open Source. Feel free to use it in your personal projects. ;-)
+This is Simple Voice Assistant tool made with Python. That is free to use and Open Source. Feel free to use it in your personal projects. 
+*This program is only supported on windows. Support for other OSs will be added soon.*
+;-)
 
 
 
